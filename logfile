@@ -1,0 +1,36 @@
+2025-04-16 14:43:11.540 EDT [61757] LOG:  starting PostgreSQL 16.6 on x86_64-apple-darwin23.6.0, compiled by Apple clang version 16.0.0 (clang-1600.0.26.4), 64-bit
+2025-04-16 14:43:11.544 EDT [61757] LOG:  could not bind IPv4 address "127.0.0.1": Address already in use
+2025-04-16 14:43:11.544 EDT [61757] HINT:  Is another postmaster already running on port 5432? If not, wait a few seconds and retry.
+2025-04-16 14:43:11.545 EDT [61757] LOG:  could not bind IPv6 address "::1": Address already in use
+2025-04-16 14:43:11.545 EDT [61757] HINT:  Is another postmaster already running on port 5432? If not, wait a few seconds and retry.
+2025-04-16 14:43:11.545 EDT [61757] WARNING:  could not create listen socket for "localhost"
+2025-04-16 14:43:11.545 EDT [61757] FATAL:  could not create any TCP/IP sockets
+2025-04-16 14:43:11.545 EDT [61757] LOG:  database system is shut down
+2025-04-16 14:46:56.879 EDT [62051] LOG:  starting PostgreSQL 16.6 on x86_64-apple-darwin23.6.0, compiled by Apple clang version 16.0.0 (clang-1600.0.26.4), 64-bit
+2025-04-16 14:46:56.880 EDT [62051] LOG:  listening on IPv4 address "127.0.0.1", port 5433
+2025-04-16 14:46:56.880 EDT [62051] LOG:  listening on IPv6 address "::1", port 5433
+2025-04-16 14:46:56.880 EDT [62051] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5433"
+2025-04-16 14:46:56.883 EDT [62054] LOG:  database system was shut down at 2025-04-16 14:09:54 EDT
+2025-04-16 14:46:56.886 EDT [62051] LOG:  database system is ready to accept connections
+2025-04-16 14:48:17.967 EDT [62147] FATAL:  role "postgres" does not exist
+2025-04-16 14:50:39.330 EDT [62314] FATAL:  database "samanthamakowski" does not exist
+2025-04-16 14:51:56.887 EDT [62052] LOG:  checkpoint starting: time
+2025-04-16 14:52:01.569 EDT [62052] LOG:  checkpoint complete: wrote 49 buffers (0.3%); 0 WAL file(s) added, 0 removed, 0 recycled; write=4.673 s, sync=0.003 s, total=4.683 s; sync files=15, longest=0.001 s, average=0.001 s; distance=271 kB, estimate=271 kB; lsn=0/1546E88, redo lsn=0/1546E50
+2025-04-16 14:56:56.581 EDT [62052] LOG:  checkpoint starting: time
+2025-04-16 14:58:31.486 EDT [62052] LOG:  checkpoint complete: wrote 939 buffers (5.7%); 0 WAL file(s) added, 0 removed, 0 recycled; write=94.889 s, sync=0.010 s, total=94.906 s; sync files=301, longest=0.001 s, average=0.001 s; distance=4315 kB, estimate=4315 kB; lsn=0/197DE30, redo lsn=0/197DDF8
+2025-04-16 15:01:56.491 EDT [62052] LOG:  checkpoint starting: time
+2025-04-16 15:02:03.913 EDT [62052] LOG:  checkpoint complete: wrote 74 buffers (0.5%); 0 WAL file(s) added, 0 removed, 0 recycled; write=7.415 s, sync=0.003 s, total=7.423 s; sync files=57, longest=0.001 s, average=0.001 s; distance=250 kB, estimate=3909 kB; lsn=0/19BC6C0, redo lsn=0/19BC688
+2025-04-16 15:06:56.918 EDT [62052] LOG:  checkpoint starting: time
+2025-04-16 15:06:59.262 EDT [62052] LOG:  checkpoint complete: wrote 24 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=2.338 s, sync=0.003 s, total=2.345 s; sync files=18, longest=0.001 s, average=0.001 s; distance=10 kB, estimate=3519 kB; lsn=0/19BF238, redo lsn=0/19BF200
+2025-04-16 22:42:26.287 EDT [81356] ERROR:  insert or update on table "employee" violates foreign key constraint "employee_role_id_fkey"
+2025-04-16 22:42:26.287 EDT [81356] DETAIL:  Key (role_id)=(4) is not present in table "role".
+2025-04-16 22:42:26.287 EDT [81356] STATEMENT:  INSERT INTO employee (first_name, last_name, role_id, manager_id) VALUES ($1, $2, $3, $4)
+2025-04-16 22:46:04.402 EDT [62052] LOG:  checkpoint starting: time
+2025-04-16 22:46:05.229 EDT [62052] LOG:  checkpoint complete: wrote 9 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.818 s, sync=0.002 s, total=0.829 s; sync files=9, longest=0.001 s, average=0.001 s; distance=1 kB, estimate=3167 kB; lsn=0/19BF948, redo lsn=0/19BF910
+2025-04-16 22:53:04.688 EDT [82161] ERROR:  insert or update on table "employee" violates foreign key constraint "employee_role_id_fkey"
+2025-04-16 22:53:04.688 EDT [82161] DETAIL:  Key (role_id)=(45) is not present in table "role".
+2025-04-16 22:53:04.688 EDT [82161] STATEMENT:  INSERT INTO employee (first_name, last_name, role_id, manager_id) VALUES ($1, $2, $3, $4)
+2025-04-16 22:56:04.253 EDT [62052] LOG:  checkpoint starting: time
+2025-04-16 22:56:05.382 EDT [62052] LOG:  checkpoint complete: wrote 12 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=1.121 s, sync=0.002 s, total=1.132 s; sync files=12, longest=0.001 s, average=0.001 s; distance=2 kB, estimate=2851 kB; lsn=0/19C04D8, redo lsn=0/19C04A0
+2025-04-16 23:06:04.391 EDT [62052] LOG:  checkpoint starting: time
+2025-04-16 23:06:05.522 EDT [62052] LOG:  checkpoint complete: wrote 12 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=1.122 s, sync=0.003 s, total=1.133 s; sync files=12, longest=0.001 s, average=0.001 s; distance=3 kB, estimate=2566 kB; lsn=0/19C12A8, redo lsn=0/19C1270
