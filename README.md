@@ -17,7 +17,9 @@ This command-line application allows business owners to manage their company's e
 - PostgreSQL
 - pg package
 
-[Watch the Walkthrough Video on Loom](https://www.loom.com/share/6fbf09edcac14830ac48fce2076d4b15)
+[Watch the Walkthrough Video on Loom]
+https://www.loom.com/share/6fbf09edcac14830ac48fce2076d4b15
 
-[GitHub Repository](https://github.com/SamanthaMakowski/employee-tracker)
+[GitHub Repository]
+ https://github.com/SamanthaMakowski/employee-tracker
 
